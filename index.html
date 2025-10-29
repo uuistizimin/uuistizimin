@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UUIS Tizimín - Universidad Autónoma de Yucatán</title>
+    <meta name="description" content="Unidad Universitaria de Inserción Social (UUIS) Tizimín - servicios médicos, proyectos comunitarios y contacto.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uady-blue': '#003366',
+                        'uady-gold': '#CCA400',
+                        'light-gray': '#F4F4F4',
+                        'text-primary': '#333333',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-roboto text-text-primary">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="img/logo_uady.svg" alt="Logo UADY" class="h-14 w-14" loading="lazy">
+                <img src="img/LogoUUIS.jpg" alt="Logo UUIS" class="h-14 w-14" loading="lazy">
+                <div>
+                    <h1 class="font-montserrat font-bold text-uady-blue text-lg md:text-xl">UUIS Tizimín</h1>
+                    <p class="text-xs text-gray-600">Universidad Autónoma de Yucatán</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="#inicio" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Inicio</a>
+                <a href="#servicios" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Servicios</a>
+                <a href="#nosotros" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Nosotros</a>
+                <a href="#contacto" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Contacto</a>
+            </nav>
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-uady-blue" onclick="toggleMobileMenu()" aria-label="Abrir menú móvil" aria-controls="mobileMenu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <nav id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-4 flex flex-col gap-3">
+                <a href="#inicio" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Inicio</a>
+                <a href="#servicios" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Servicios</a>
+                <a href="#nosotros" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Nosotros</a>
+                <a href="#contacto" class="font-montserrat text-uady-blue hover:text-uady-gold transition-colors">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('/placeholder.svg?height=1080&width=1920');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="font-montserrat font-bold text-4xl md:text-6xl mb-6 text-balance">Unidad Universitaria de Inserción Social, Tizimín</h2>
+            <p class="font-roboto text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed text-pretty">
+                Somos una unidad de primer nivel de atención que proporciona cuidados de calidad con sentido humanista, para elevar el nivel de bienestar de las personas de la región oriente del estado, a través de la formación de recursos humanos en salud, la investigación y la extensión de los servicios.
+            </p>
+            <a href="#servicios" class="inline-block bg-uady-gold hover:bg-yellow-600 text-white font-montserrat font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                Conoce nuestros servicios
+            </a>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-16 md:py-24 bg-light-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl text-uady-blue text-center mb-12">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Consulta Médica -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
+                        <br>
+                        <center><img src="img/consulta_medica.png" alt="Consulta Medica" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Consulta Médica</h3>
+                        <p class="font-roboto text-gray-700 leading-relaxed">
+                            Atención médica profesional y personalizada para el cuidado integral de tu salud.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Cuidado de Enfermería -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
+                        <br>
+                        <center><img src="img/cuidados_enfermeria.jpg" alt="Cuidados de enfermería" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Cuidado de Enfermería</h3>
+                        <ul class="font-roboto text-gray-700 space-y-2 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Inyecciones</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Sutura menor</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Curación</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Retiro de puntos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Lavado de oídos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Glicemia</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Nebulizaciones</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Control de diabetes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3: Proyectos Comunitarios -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
+                        <br>
+                        <center><img src="img/actividades_comunitarias.jpg" alt="Actividades comunitarias" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Proyectos Comunitarios</h3>
+                        <ul class="font-roboto text-gray-700 space-y-2 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Activación física</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Ayuda mutua</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Estimulación temprana</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Guardianes de la salud</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Salud Escolar</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-uady-gold mt-1">•</span>
+                                <span>Visita domiciliaria</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl text-uady-blue text-center mb-12">Nosotros</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- Misión -->
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-uady-blue rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-2xl text-uady-blue">Misión</h3>
+                    </div>
+                    <p class="font-roboto text-gray-700 leading-relaxed">
+                        Somos una unidad de primer nivel de atención que proporciona cuidados de calidad con sentido humanista, para elevar el nivel de bienestar de las personas de la región oriente del estado, a través de la formación de recursos humanos en salud, la investigación y la extensión de los servicios.
+                    </p>
+                </div>
+
+                <!-- Visión -->
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-uady-gold rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-2xl text-uady-blue">Visión</h3>
+                    </div>
+                    <p class="font-roboto text-gray-700 leading-relaxed">
+                        Ser una unidad de primer nivel de atención altamente reconocida por la calidad de sus servicios, la formación de recursos humanos en salud con sentido humanista y la generación de conocimiento científico que contribuya al desarrollo de la región oriente del estado.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos -->
+    <section id="eventos" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-montserrat font-bold text-3xl md:text-4xl text-uady-blue text-center mb-12">Próximos Eventos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-light-gray p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-montserrat font-semibold text-lg text-uady-blue">Jornada de Salud</h3>
+                        <span class="text-sm text-gray-600">15 Nov 2025</span>
+                    </div>
+                    <p class="font-roboto text-gray-700 text-sm mb-4">Atención médica general y orientación nutricional abierta al público en la plaza municipal.</p>
+                    <a href="#" class="inline-block text-uady-gold font-montserrat font-semibold">Más información →</a>
+                </div>
+
+                <div class="bg-light-gray p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-montserrat font-semibold text-lg text-uady-blue">Taller: Primeros Auxilios</h3>
+                        <span class="text-sm text-gray-600">22 Nov 2025</span>
+                    </div>
+                    <p class="font-roboto text-gray-700 text-sm mb-4">Capacitación teórico-práctica dirigida a estudiantes y comunidad en general.</p>
+                    <a href="#" class="inline-block text-uady-gold font-montserrat font-semibold">Inscribirme</a>
+                </div>
+
+                <div class="bg-light-gray p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-montserrat font-semibold text-lg text-uady-blue">Campaña de Vacunación</h3>
+                        <span class="text-sm text-gray-600">5 Dic 2025</span>
+                    </div>
+                    <p class="font-roboto text-gray-700 text-sm mb-4">Aplicación de vacunas estacionales para niños y adultos; revisa requisitos.</p>
+                    <a href="#" class="inline-block text-uady-gold font-montserrat font-semibold">Ver detalles</a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="inline-block bg-uady-blue text-white px-6 py-3 rounded-lg font-montserrat">Ver todos los eventos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="bg-uady-blue text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Contacto -->
+                <div>
+                    <h3 class="font-montserrat font-bold text-xl mb-4 text-uady-gold">Contacto</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-uady-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <a href="tel:9868632175" class="font-roboto hover:text-uady-gold transition-colors">(986) 863 2175</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="font-roboto hover:text-uady-gold transition-colors flex items-center gap-2" aria-label="Página oficial de Facebook">
+                                <svg class="w-5 h-5 text-uady-gold" fill="currentColor" viewBox="0 0 24 24" role="img" aria-hidden="false">
+                                    <title>Facebook</title>
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                                Página oficial de Facebook
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="font-roboto hover:text-uady-gold transition-colors flex items-center gap-2" aria-label="Instagram">
+                                <svg class="w-5 h-5 text-uady-gold" fill="currentColor" viewBox="0 0 24 24" role="img" aria-hidden="false">
+                                    <title>Instagram</title>
+                                    <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zM12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 2a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM17.5 6a.9.9 0 11-1.8 0 .9.9 0 011.8 0z"/>
+                                </svg>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horario -->
+                <div>
+                    <h3 class="font-montserrat font-bold text-xl mb-4 text-uady-gold">Horario de Atención</h3>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-uady-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="font-roboto leading-relaxed">
+                            De lunes a viernes<br>
+                            de 7:30 a 15:30 horas
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ubicación -->
+                <div>
+                    <h3 class="font-montserrat font-bold text-xl mb-4 text-uady-gold">Ubicación</h3>
+                    <div class="flex items-start gap-3 mb-4">
+                        <svg class="w-5 h-5 text-uady-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="font-roboto leading-relaxed">
+                            Tizimín, Yucatán, México
+                        </p>
+                    </div>
+                    <!-- Google Maps Placeholder -->
+                    <div class="w-full h-32 bg-gray-700 rounded-lg flex items-center justify-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.965627092894!2d-88.14454651110034!3d21.159240166481407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f522b6c741fe2ff%3A0x1a4273ac58448ae1!2sUADY%20-%20Unidad%20Multidisciplinaria%20Tizim%C3%ADn!5e1!3m2!1ses-419!2smx!4v1761623182900!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-600 mt-8 pt-6 text-center">
+                <p class="font-roboto text-sm text-gray-300">
+                    © 2025 Universidad Autónoma de Yucatán - UUIS Tizimín. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
