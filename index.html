@@ -71,7 +71,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('/placeholder.svg?height=1080&width=1920');">
+    <section id="inicio" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('img/background.png');">
         <div class="container mx-auto px-4 text-center text-white">
             <h2 class="font-montserrat font-bold text-4xl md:text-6xl mb-6 text-balance">Unidad Universitaria de Inserción Social, Tizimín</h2>
             <p class="font-roboto text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed text-pretty">
@@ -88,99 +88,114 @@
         <div class="container mx-auto px-4">
             <h2 class="font-montserrat font-bold text-3xl md:text-4xl text-uady-blue text-center mb-12">Nuestros Servicios</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Card 1: Consulta Médica -->
+
+                <!-- Card: Consulta Médica (detallada) -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
                         <br>
-                        <center><img src="img/consulta_medica.png" alt="Consulta Medica" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                        <center><img src="img/consulta_medica.png" alt="Consulta Médica" class="h-48 bg-cover bg-center" loading="lazy"></center>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Consulta Médica</h3>
-                        <p class="font-roboto text-gray-700 leading-relaxed">
-                            Atención médica profesional y personalizada para el cuidado integral de tu salud.
-                        </p>
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Consulta médica</h3>
+                        <ul class="font-roboto text-gray-700 space-y-2 text-sm">
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Consulta médica</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Atención prenatal</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Planificación familiar</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Sutura menor</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Extracción de cuerpos extraños</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Atención a personas con diabetes</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Atención a personas con hipertensión arterial</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Visitas domiciliarias</span></li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Card 2: Cuidado de Enfermería -->
+                <!-- Card: Consultorio de odontología -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
+                        <br>
+                        <center><img src="img/odontologia.jpg" alt="Consultorio de odontología" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Consultorio de odontología</h3>
+                        <ul class="font-roboto text-gray-700 space-y-2 text-sm">
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Consulta odontológica</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Extracciones</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Limpieza</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Aplicación de resina</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card: Estimulación temprana / prenatal -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
+                        <br>
+                        <center><img src="img/estimulacion_temprana.jpeg" alt="Estimulación temprana" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Estimulación temprana / Estimulación prenatal</h3>
+                        <ul class="font-roboto text-gray-700 space-y-2 text-sm">
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Capacitación a cuidadores de menores de cinco años</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Capacitación a mujeres embarazadas</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card: Cuidados de enfermería (detallada) -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
                         <br>
                         <center><img src="img/cuidados_enfermeria.jpg" alt="Cuidados de enfermería" class="h-48 bg-cover bg-center" loading="lazy"></center>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Cuidado de Enfermería</h3>
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Cuidados de enfermería</h3>
                         <ul class="font-roboto text-gray-700 space-y-2 text-sm">
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Inyecciones</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Sutura menor</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Curación</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Retiro de puntos</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Lavado de oídos</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Glicemia</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Nebulizaciones</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Control de diabetes</span>
-                            </li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Inyecciones</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Estimulación temprana</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Instalación de terapia intravenosa</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Curación de heridas</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Retiro de puntos</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Lavado de oídos</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Glicemia / Glucometría</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Nebulizaciones</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Control de temperatura</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Medición de tensión arterial</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Control de niño sano</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Vendajes</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Rehidratación oral</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Planificación familiar</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Cuantificación de colesterol</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span>Cuantificación de triglicéridos</span></li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Card 3: Proyectos Comunitarios -->
+                <!-- Card: Visita domiciliaria -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
                         <br>
-                        <center><img src="img/actividades_comunitarias.jpg" alt="Actividades comunitarias" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                        <center><img src="img/visita_domiciliaria.jpg" alt="Visita domiciliaria" class="h-48 bg-cover bg-center" loading="lazy"></center>
                     </div>
                     <div class="p-6">
-                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Proyectos Comunitarios</h3>
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Visita domiciliaria</h3>
+                        <p class="font-roboto text-gray-700 leading-relaxed text-sm">Atención integral en el domicilio para personas con movilidad reducida o que requieren seguimiento domiciliario.</p>
+                    </div>
+                </div>
+
+                <!-- Card: Proyectos / Servicios comunitarios -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/placeholder.svg?height=300&width=400');">
+                        <br>
+                        <center><img src="img/actividades_comunitarias.jpg" alt="Proyectos comunitarios" class="h-48 bg-cover bg-center" loading="lazy"></center>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-montserrat font-bold text-xl text-uady-blue mb-4">Proyectos comunitarios</h3>
                         <ul class="font-roboto text-gray-700 space-y-2 text-sm">
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Activación física</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Ayuda mutua</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Estimulación temprana</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Guardianes de la salud</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Salud Escolar</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-uady-gold mt-1">•</span>
-                                <span>Visita domiciliaria</span>
-                            </li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span><strong>Cuidando a mi familia</strong> — Capacitación a padres y cuidadores de niños y adolescentes sobre alimentación, uso adecuado de redes, higiene, etc.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span><strong>UUIS en tu colonia</strong> — Detecciones de glucosa, tensión arterial, consultas médicas y talleres para personas con diabetes.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span><strong>Salud responsable</strong> — Capacitaciones a estudiantes y público en general sobre primeros auxilios, signos vitales, inyecciones, etc.</span></li>
+                            <li class="flex items-start gap-2"><span class="text-uady-gold mt-1">•</span><span><strong>Estimulación temprana / prenatal</strong> — Capacitación a cuidadores y embarazadas sobre técnicas para estimular al feto y a niños menores de cinco años (motricidad fina y gruesa, lenguaje, socialización y cognitivo).</span></li>
                         </ul>
                     </div>
                 </div>
@@ -284,7 +299,7 @@
                             <a href="tel:9868632175" class="font-roboto hover:text-uady-gold transition-colors">(986) 863 2175</a>
                         </div>
                         <div class="flex items-center gap-3">
-                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="font-roboto hover:text-uady-gold transition-colors flex items-center gap-2" aria-label="Página oficial de Facebook">
+                            <a href="https://www.facebook.com/UUISTizimin" target="_blank" rel="noopener noreferrer" class="font-roboto hover:text-uady-gold transition-colors flex items-center gap-2" aria-label="Página oficial de Facebook">
                                 <svg class="w-5 h-5 text-uady-gold" fill="currentColor" viewBox="0 0 24 24" role="img" aria-hidden="false">
                                     <title>Facebook</title>
                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -293,7 +308,7 @@
                             </a>
                         </div>
                         <div class="flex items-center gap-3">
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="font-roboto hover:text-uady-gold transition-colors flex items-center gap-2" aria-label="Instagram">
+                            <a href="https://www.instagram.com/uuis.tizimin?igsh=OTNpZnN2d216NjV0" target="_blank" rel="noopener noreferrer" class="font-roboto hover:text-uady-gold transition-colors flex items-center gap-2" aria-label="Instagram">
                                 <svg class="w-5 h-5 text-uady-gold" fill="currentColor" viewBox="0 0 24 24" role="img" aria-hidden="false">
                                     <title>Instagram</title>
                                     <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zM12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 2a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM17.5 6a.9.9 0 11-1.8 0 .9.9 0 011.8 0z"/>
